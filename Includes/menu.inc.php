@@ -9,7 +9,7 @@
 ?>
 
 <div id="menu">
-  <ul class="right hide-on-med-and-down">
+  <ul>
 	<?php echo $menu;?>
   </ul>    
 </div>

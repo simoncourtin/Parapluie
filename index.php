@@ -10,7 +10,7 @@ $pageManager = new PageManager();
 <html>
     <head>
         <meta charset="UTF-8">
-       
+		<link href="css/style.css" rel="stylesheet">
         
 
         <!--Rooter pour la construction dynamique des pages-->
