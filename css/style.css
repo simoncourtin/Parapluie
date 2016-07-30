@@ -1,0 +1,33 @@
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 175%;
+}
+h3 {
+  font-size: 150%;
+}
+h4 {
+  font-size: 125%;
+}
+
+.body ul
+{
+  padding-left: 40px;
+}
+
+.body ul li
+{
+  list-style: disc;
+  text-indent:20px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+}
