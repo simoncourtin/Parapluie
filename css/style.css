@@ -9,6 +9,11 @@ html {
 	text-align:justify;
 }
 
+.article img
+{
+	width : 500px;
+}
+
 footer
 {
 	width : 50%;

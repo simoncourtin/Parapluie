@@ -18,7 +18,7 @@ $pageManager = new PageManager();
 			require_once("Includes/parameters.inc.php");
 			require_once("Includes/rooter.inc.php");
         ?>
-        <title><?php echo $page->getName()." - ".$GLOBALS['titre_site'] ; ?></title>
+        <title><?php echo $page->getName()." - ".$PARAMETRES['titre_site'] ; ?></title>
     </head>
     
     <?php

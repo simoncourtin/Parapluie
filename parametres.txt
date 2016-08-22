@@ -1,0 +1,3 @@
+titre_site:Lorem Ipsum
+sous_titre_site:Lorem Ipsum
+default_page:1-Accueil
