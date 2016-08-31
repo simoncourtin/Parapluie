@@ -2,9 +2,13 @@
 	$menu = "";
 	$data = $pageManager->getPage('./Data');
 	foreach ($data->getPages() as $p) {
-	  $name_p = $p->getName();
-	  $adr_p = preg_split("#./Data/#", $p->getPath())[1];
+	  if(!$p->isHidden()){
+		  $name_p = $p->getName();
+		  //on considère que les rep des page est la racine
+		  // on extrait donc ./data/pages
+		  $adr_p = preg_split("#./Data/#", $p->getPath())[1];
 	  $menu = $menu."<li><a href='index.php?page=$adr_p'>$name_p</a></li>"."\n";
+	  }
 	}
 ?>
 

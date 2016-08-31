@@ -11,15 +11,19 @@ class Page {
     private $pages = array();
     private $c_date;
     private $m_date;
+	
+	private $hidden = false;
 
     //constructor
     function __construct($page) {
         if (!empty($page))
             $this->affectePage($page);
+
     }
 
     //fonction de creation et affectation des variables
     function affectePage($page) {
+	
         foreach ($page as $col => $value) {
             switch ($col) {
                 case 'page_name':
@@ -40,10 +44,14 @@ class Page {
                 case 'page_modify_date':
                     $this->setModifyDate($value);
                     break;
+				case 'page_hidden':
+                    $this->setHidden($value);
+                    break;
                 default:
                     break;
             }
         }
+		
     }
 
     //getters
@@ -70,6 +78,11 @@ class Page {
     public function getModifyDate(){
       return $this->m_date;
     }
+	
+	public function isHidden(){
+      return $this->hidden;
+    }
+	
 
     //setters
     public function setName($name){
@@ -94,6 +107,10 @@ class Page {
 
     public function setModifyDate($date){
       $this->m_date = $date;
+    }
+	
+	public function setHidden($bool){
+      $this->hidden = $bool;
     }
 
 }

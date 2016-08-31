@@ -12,13 +12,13 @@ class PageManager{
 
     //get page avec path
     function getPage($path){
-
       if (is_dir($path))
       {
         //scan le dossier
         $element  = basename($path);
         $page = $this->createPage($element,$path);
         $this->getContenu($page);
+		
         return $page;
       }
 
@@ -70,10 +70,11 @@ class PageManager{
                           'page_articles'=>array(),
                           'page_pages'=>array(),
                           'page_create_date'=>$page_c_date,
-                          'page_modify_date'=>$page_m_date);
+                          'page_modify_date'=>$page_m_date,
+						  'page_hidden'=> (($element[0] == "-" )? true : false) 
+						  );
       //creation de l'objet page
       $page = new Page($page_param);
-      //$this->loader->LoadContenuPage($page);
       return $page;
 
     }
@@ -81,6 +82,15 @@ class PageManager{
     //fonction de transformation du nom
     function extractPageName($string){
       //extraire la nom de la page
+	  
+	  //suppresion de l'ordre dans le nom
+	  $keywords = preg_split("/[-]+/", $string);
+	  if(count($keywords)>1){
+			$string = $keywords[1];
+		}
+	else{
+			$string = $keywords[0];
+		}
       //suppression des _
       $keywords = preg_split("/[_]+/", $string);
       //reconstruction du nom
