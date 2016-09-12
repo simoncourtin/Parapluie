@@ -55,5 +55,10 @@ class ArticleManager{
 	  $this->fileManager->AfficheFileContent($path);
     }
 
+    function ModiferArticle($article,$newContent){
+        $path = $article->getPath();
+        $this->fileManager->ModifierFileContent($path,$newContent);
+    }
+
 
 }

@@ -10,17 +10,19 @@
 			$articleManager = new ArticleManager();
 			//Recuperation des arcticles de la page
 			$articles = $page->getArticles();
+			$i = 0 ;
 			//boucle sur tout les articles
 			foreach ($articles as $a) {
 				//Recuperation contenu de l article
 				$articleManager->getContenu($a);
 				if(pathinfo($a->getPath())['extension'] == "md"
 				OR pathinfo($a->getPath())['extension'] == "html"){
+					$articleEditor = "article".$i;
 					?>
 					<div>
 						<h3><?php echo $a->getName(); ?></h3>
 						<form action="#" method="post">
-							<textarea name="editor1" id="editor1" rows="20" cols="60">
+							<textarea name="<?php echo $articleEditor; ?>" id="<?php echo $articleEditor; ?>" rows="20" cols="60">
 								<?php echo $a->getContent(); ?>
 							</textarea>
 							<br>
@@ -38,6 +40,7 @@
 						$articleManager->AfficherContenu($a);
 						echo "</div>";
 				}
+				$i++;
 			}
 	  }
 	?>

@@ -17,6 +17,11 @@ class FileManager {
     return $str;
    }
 
+   public function writeFile($adrFile, $content){
+     $result = file_put_contents($adrFile, $content);
+     return $result;
+   }
+
    //recuperer le contenu du fichier avec le path et selon l'extension
    public function getFileContent($path) {
 		return $this->readFile($path);
@@ -38,6 +43,24 @@ class FileManager {
       //fichier php
           include $path;
           break;
+       default:
+         # code...
+         break;
+     }
+
+   }
+
+   //recuperer le contenu du fichier avec le path et selon l'extension
+   public function ModifierFileContent($path,$newContent) {
+     switch (pathinfo($path)['extension']) {
+       case 'md':
+        //fichier markdon
+          $this->writeFile($path,$newContent);
+         break;
+      case 'html':
+      //fichier html
+           $this->writeFile($path,$newContent);
+           break;
        default:
          # code...
          break;
