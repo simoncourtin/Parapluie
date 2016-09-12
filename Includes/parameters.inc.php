@@ -1,8 +1,8 @@
 <?php
 
 //emplacement des pages ressources
-$GLOBALS['pages'] = "Data";
-$GLOBALS['Ressources'] = "Ressources";
+$GLOBALS['pages'] = "Data/Pages";
+$GLOBALS['Ressources'] = "Data/Ressources";
 //emplacement fichier parametres
 $GLOBALS['parameter_file'] = "parametres.txt";
 

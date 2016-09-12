@@ -46,7 +46,9 @@ class ArticleManager{
             $article->setContent($contenu);
         }
 
-      }
+    }
+
+    
     //afficher le contenu d'un article
     function AfficherContenu($article){
 	  $path = $article->getPath();
