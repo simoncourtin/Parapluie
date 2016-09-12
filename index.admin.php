@@ -11,8 +11,6 @@ $pageManager = new PageManager();
     <head>
         <meta charset="UTF-8">
 		<link href="css/style.css" rel="stylesheet">
-        <!-- Chargement de ckeditor-->
-        <script src="Libs/ckeditor/ckeditor.js"></script>
 	    
         <!--Rooter pour la construction dynamique des pages-->
         <?php
