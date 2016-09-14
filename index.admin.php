@@ -21,9 +21,9 @@ $pageManager = new PageManager();
     </head>
     
     <?php
-		require_once("Includes/header.admin.inc.php");
-		require_once("Includes/body.admin.inc.php");
-		require_once("Includes/footer.admin.inc.php");
+		require_once("Includes/admin/header.admin.inc.php");
+		require_once("Includes/admin/body.admin.inc.php");
+		require_once("Includes/admin/footer.admin.inc.php");
     ?>
 
 </html>
