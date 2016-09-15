@@ -1,4 +1,11 @@
 <?php
-echo '<h2>'.$_POST["articleName"].'</h2>';
-var_dump($_POST);
+include "../../Libs/Parsedown/Parsedown.php";
+include "../../Classes/FileManager.class.php";
+
+$fileManager = new FileManager();
+
+if($_POST["submit"]){
+
+	$fileManager->writeFile($_POST["path"],  $_POST["contenu"]);
+}
 ?>
