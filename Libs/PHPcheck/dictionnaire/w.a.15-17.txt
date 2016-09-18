@@ -1,7 +1,0 @@
-wagon-réservoir
-wagon-restaurant
-wagons-citernes
-wagons-réservoirs
-wagons-tombereaux
-wagon-tombereau
-walkies-talkies

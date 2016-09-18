@@ -13,11 +13,16 @@ if(isset($_POST["submit"])){
 else {
 	?>
 	<form action="?action=modify&path=<?php echo $article->getPath();?>" method="POST">
-		<textarea name="contenu" rows="10" cols="60"><?php echo $article->getContent(); ?>	</textarea>
+		<textarea name="contenu" id="contenu" rows="10" cols="60"><?php echo $article->getContent(); ?>	</textarea>
 		<br>
 		<input type="text" name="path" value="<?php echo $article->getPath(); ?>" hidden>
 		<input type="submit" name="submit" value="Modifier">
 	</form>
+	<script>
+		// Replace the <textarea id="editor1"> with a CKEditor
+		// instance, using default configuration.
+		CKEDITOR.replace( 'contenu' );
+	</script>
 	<?php
 }
 

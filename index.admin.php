@@ -13,7 +13,8 @@ require_once("Includes/rooter.inc.php");
     <head>
         <title><?php echo $page->getName()." - ".$PARAMETRES['titre_site'] ; ?></title>
 		<meta charset="UTF-8">
-		<link href="css/style.css" rel="stylesheet">		
+		<link href="css/style.css" rel="stylesheet">
+		<script src="Libs/ckeditor/ckeditor.js"></script>
     </head>
     
     <?php

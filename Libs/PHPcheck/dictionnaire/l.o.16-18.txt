@@ -1,4 +1,0 @@
-locataire-gérant
-locataires-gérants
-locations-ventes
-longitudinalement

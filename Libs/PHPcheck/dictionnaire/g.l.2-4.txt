@@ -1,4 +1,0 @@
-glas
-glu
-glui
-glus

@@ -1,3 +1,0 @@
-bic
-bis
-bit
