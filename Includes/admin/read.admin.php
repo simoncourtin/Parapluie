@@ -9,15 +9,19 @@ if(isset($page)){
 	//boucle sur tout les articles
 	foreach ($articles as $a) {
 		echo "<div>";
-			echo "<h3>".$a->getName()."</h3>";
+		echo "<ul class='collection with-header'>";
+			echo "<li class='collection-header'>";
 			//Recuperation contenu de l article
 			$articleManager->getContenu($a);
 			if(pathinfo($a->getPath())['extension'] == "md"
 			OR pathinfo($a->getPath())['extension'] == "html"){
-				
-				echo "<p><a href='?action=modify&path=".$a->getPath()."'>Modifier</a></p>";
+				echo "<a class='waves-effect waves-light btn right' href='?action=modify&path=".$a->getPath()."'>Modifier <i class='material-icons'>edit</i></a>";
 			}
-			$articleManager->AfficherContenu($a);
+			echo "<h3>".$a->getName()."</h3></li>";
+			echo "<li class='collection-item'>";
+				$articleManager->AfficherContenu($a);
+			echo "</li>";
+		echo "</ul>";
 		echo "</div>";
 	}
 }
