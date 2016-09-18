@@ -9,6 +9,7 @@ if(isset($page)){
 	//boucle sur tout les articles
 	foreach ($articles as $a) {
 		echo "<div>";
+			echo "<h3>".$a->getName()."</h3>";
 			//Recuperation contenu de l article
 			$articleManager->getContenu($a);
 			if(pathinfo($a->getPath())['extension'] == "md"
