@@ -9,6 +9,8 @@ class Page {
     private $articles = array();
     //les sous-page
     private $pages = array();
+	//images de la page (background, ...)
+	private $images = array ();
     private $c_date;
     private $m_date;
 	
@@ -37,6 +39,9 @@ class Page {
                     break;
                 case 'page_pages':
                     $this->setPages($value);
+                    break;
+				case 'page_images':
+                    $this->setImages($value);
                     break;
                 case 'page_create_date':
                     $this->setCreateDate($value);
@@ -70,6 +75,10 @@ class Page {
     public function getPages(){
       return $this->pages;
     }
+	
+	public function getImages(){
+      return $this->images;
+    }
 
     public function getCreateDate(){
       return $this->c_date;
@@ -99,6 +108,10 @@ class Page {
 
     public function setPages($pages){
       $this->pages = $pages;
+    }
+	
+	public function setImages($images){
+      $this->images = $images;
     }
 
     public function setCreateDate($date){

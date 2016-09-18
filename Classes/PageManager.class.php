@@ -32,26 +32,37 @@ class PageManager{
       $pages = array();
 	  //articles de la pages
       $articles = array();
+	  //images de la pages
+      $images = array();
 
       if (is_dir($path))
       {
           //contenu
           $contenu =  scandir($path);
           foreach ($contenu as $c) {
-             $pathContenu = $path == '.' ? $c : $path . '/' . $c;
-             if(is_file($pathContenu)) {
+            $pathContenu = $path == '.' ? $c : $path . '/' . $c;
+            if(is_file($pathContenu)) {
                //c'est un fichier
-              $article = $this->articleManager->getArticle($pathContenu);
-              array_push($articles, $article);
+			   $extention =  pathinfo($pathContenu)['extension'];
+			  if ($extention == "jpg" || $extention == "jpeg" || $extention == "png"){
+				  //c'est une image 
+				  array_push($images, $pathContenu);
+			  } else {
+				$article = $this->articleManager->getArticle($pathContenu);
+				array_push($articles, $article);  
+			  }
+              
 
-            } else if($c != "." && $c != ".." && is_dir($pathContenu) && $c != "ressources" ) {
+            } else if($c != "." && $c != ".." && is_dir($pathContenu)) {
               //c'est une page
               $p =  $this->getPage($pathContenu);
               array_push($pages, $p);
             }
           }
+		  
           $page->setArticles($articles);
           $page->setPages($pages);
+		  $page->setImages($images);
       }
 
     }
