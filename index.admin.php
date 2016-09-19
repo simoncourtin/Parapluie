@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once ("Includes/autoload.inc.php");
 $pageManager = new PageManager();
 

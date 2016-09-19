@@ -32,3 +32,14 @@ footer
 	top: 64px;
 	overflow: hidden
 }
+
+#ui_tilte { 
+	font-size: 200%;
+	position : relative;
+	left : 50px;
+}
+#user_name { 
+	margin-right : 15px;
+	margin-left : 5px;
+	
+}
