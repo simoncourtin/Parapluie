@@ -163,3 +163,13 @@ $foldershistory[] = $useruploadfolder;
     $useruploadpath = $usersiteroot."$useruploadfolder/";
     $foldershistory[] = "Arki-project/Data/Ressources/";
         
+
+    $useruploadfolder = "Arki-project/Data/Ressources/";
+    $useruploadpath = $usersiteroot."$useruploadfolder/";
+    $foldershistory[] = "Arki-project/Data/Ressources/";
+        
+
+    $useruploadfolder = "Arki/Data/Ressources/";
+    $useruploadpath = $usersiteroot."$useruploadfolder/";
+    $foldershistory[] = "Arki/Data/Ressources/";
+        
