@@ -308,6 +308,7 @@ function openLangPanel() {
 
 // enable news
 function enableNews() {
+/*
     Cookies.remove('show_news');
     
     $('#settingsDiv').hide();
@@ -316,10 +317,12 @@ function enableNews() {
     setTimeout(function(){
         location.reload();
     }, 250);
+	*/
 }
 
 // disable news
 function disableNews() {
+/*
     Cookies.set('show_news', 'no', { expires: 7 });
     
     $('#settingsDiv').hide();
@@ -328,6 +331,7 @@ function disableNews() {
     setTimeout(function(){
         location.reload();
     }, 250);
+	*/
 }
 
 function logOut(){

@@ -24,6 +24,9 @@ switch ($load_lang_code) {
     case "pl":
         require(__DIR__ . '/lang/pl.php');
         break;
+	case "fr":
+        require(__DIR__ . '/lang/fr.php');
+        break;
 }
 
 // Including the plugin config file, don't delete the following row!
@@ -53,17 +56,21 @@ if (file_exists($target_file)) {
     echo "<script>alert('".$uploadimgerrors2."');</script>";
     $uploadOk = 0;
 }
-// Check file size
-if ($_FILES["upload"]["size"] > 1024000) {
+// Check file size 2.48 Mo
+if ($_FILES["upload"]["size"] > 2048000) {
     echo "<script>alert('".$uploadimgerrors3."');</script>";
     $uploadOk = 0;
 }
+
+
+$formats =["JPG","PNG","JPEG","GIF","ICO","BMP"];
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" && $imageFileType != "ico" ) {
+if(!in_array(strtoupper ($imageFileType),$formats)) {
     echo "<script>alert('".$uploadimgerrors4."');</script>";
     $uploadOk = 0;
 }
+
+
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo "<script>alert('".$uploadimgerrors5."');</script>";

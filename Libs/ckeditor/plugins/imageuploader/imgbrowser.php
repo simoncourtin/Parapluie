@@ -27,6 +27,9 @@ switch ($load_lang_code) {
     case "pl":
         require(__DIR__ . '/lang/pl.php');
         break;
+	case "fr":
+        require(__DIR__ . '/lang/fr.php');
+        break;
 }
 
 // Including the plugin config file, don't delete the following row!
@@ -79,7 +82,6 @@ $_SESSION["username"] = "disabled_pw";
 <body ontouchstart="">
     
 <div id="header">
-    <a class="" href="http://imageuploaderforckeditor.altervista.org/" target="_blank"><img src="img/cd-icon-image.png" class="headerIconLogo"></a>
     <img onclick="Cookies.remove('qEditMode');window.close();" src="img/cd-icon-close-grey.png" class="headerIconRight iconHover">
     <img onclick="reloadImages();" src="img/cd-icon-refresh.png" class="headerIconRight iconHover">
     <img onclick="uploadImg();" src="img/cd-icon-upload-grey.png" class="headerIconCenter iconHover">
@@ -123,24 +125,6 @@ $_SESSION["username"] = "disabled_pw";
     loadImages();
     ?>
 </div>
-
-    
-<?php if($file_style == "block") { ?>
-    <div class="fileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
-        <div class="imgDiv">Image Uploader for CKEditor</div>
-        <p class="fileDescription">&copy; 2016 by Moritz Maleck</p>
-        <p class="fileTime">imageuploaderforckeditor.altervista.org</p>
-        <p class="fileTime">180 KB</p>
-    </div>
-<?php } elseif($file_style == "list") { ?>
-    <div class="fullWidthFileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
-        <div class="fullWidthimgDiv"><img class="fullWidthfileImg lazy" data-original="img/cd-icon-credits.png"></div>
-        <p class="fullWidthfileDescription">Image Uploader for CKEditor</p>
-        <p class="fullWidthfileTime fullWidthfileMime">png</p>
-        <p class="fullWidthfileTime">180 KB</p>
-        <p class="fullWidthfileTime fullWidth30percent">imageuploaderforckeditor.altervista.org</p>
-    </div>
-<?php } ?>
 
 <div id="imageFullSreen" class="lightbox popout">
     <div class="buttonBar">
@@ -231,6 +215,9 @@ $_SESSION["username"] = "disabled_pw";
         <br><h3 class="settingsh3"><?php echo $panelsettings18; ?></h3>
         <!--icon refr-->
         <p class="uploadP" onclick="window.open('https://icons8.com','_blank');"><img src="img/cd-icon-images.png" class="headerIcon"> <?php echo $panelsettings19; ?></p>
+		<br><h3 class="settingsh3">Traduction:</h3>
+		<!--french traduction-->
+        <p class="uploadP" onclick="window.open('https://github.com/simoncourtin?tab=repositories','_blank');"><img src="img/cd-icon-france.png" class="headerIcon"> Fait par Simon Courtin</p>
 
         <br>
     </div>
@@ -243,7 +230,7 @@ $_SESSION["username"] = "disabled_pw";
     
 <div id="background" class="background" onclick="$('#imageFullSreenClose').trigger('click');"></div>
 <div id="background2" class="background" onclick="$('#uploadImgDiv').hide(); $('#background2').slideUp(250, 'swing');"></div>
-<div id="background3" class="background" onclick="$('#settingsDiv').hide(); $('#background3').slideUp(250, 'swing');"></div>
+<div id="background3" class="background" onclick="$('#settingsDiv').hide(); $('#background3').slideUp(250, 'swing');"></div> 
 <div id="background4" class="background" onclick="$('#setLangDiv').hide(); $('#background4').slideUp(250, 'swing');"></div>
 
 <!--Noscript part if js is disabled-->

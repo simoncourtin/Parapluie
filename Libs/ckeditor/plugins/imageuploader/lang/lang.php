@@ -11,6 +11,9 @@ if(isset($_COOKIE['sy_lang'])) {
         case "pl":
             $lang_name = "Polish";
             break;
+		case "fr":
+            $lang_name = "Français";
+            break;
     }
 } else {
     $load_lang_code = "en";
@@ -26,6 +29,9 @@ switch ($load_lang_code) {
     case "pl":
         require(__DIR__ . '/pl.php');
         break;
+	case "fr":
+        require(__DIR__ . '/fr.php');
+        break;
 }
 ?>
 
@@ -34,6 +40,7 @@ switch ($load_lang_code) {
     <h3 class="settingsh3"><?php echo $langpanel1; ?></h3>
     <p class="uploadP" onclick="selectLang('en');"><img src="img/cd-icon-english.png" class="headerIcon"> English</p>
     <p class="uploadP" onclick="selectLang('pl');"><img src="img/cd-icon-polish.png" class="headerIcon"> Polish</p>
+	<p class="uploadP" onclick="selectLang('fr');"><img src="img/cd-icon-france.png" class="headerIcon"> Français</p>
     <br>
     <?php if(!isset($_COOKIE['sy_lang'])) { ?>
         <h3 class="settingsh3" style="font-size:12px;font-weight:lighter;">The standard language is <span style="font-weight:bolder;">English</span>. You can change it now or later in the settings panel.</h3>
