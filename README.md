@@ -1,9 +1,9 @@
-# Arki
+# Parapluie
 
-Arki est un logiciel permet de creer un site internet qui utilise l'architecture de fichiers et de dossiers afin de creer les differentes pages
+Parapluie est un logiciel permet de creer un site internet qui utilise l'architecture de fichiers et de dossiers afin de creer les differentes pages
 et leur contenu.
 
-Arki utilise les dossiers contenu dans le dossier Data/Pages pour creer les differentes pages du site. Les page porterons le nom des dossiers.
+Parapluie utilise les dossiers contenu dans le dossier Data/Pages pour creer les differentes pages du site. Les page porterons le nom des dossiers.
 Le contenu de chaque page est genere par les fichiers dans leur dossiers. Les extention .md, html et php sont gerer.
 
 ## Installation
@@ -43,7 +43,7 @@ Une interface utilisateur basique est installee de base et permet de modifier un
 
 ## Pour les developpeurs
 
-Arki supporte les scripts PHP dans les pages telque les formulaires de contact, ...
+Parapluie supporte les scripts PHP dans les pages telque les formulaires de contact, ...
 
 Fichiers du dossier inculdes :
 - body.inc.php : contenu du corps du site avec la balise body
@@ -54,5 +54,9 @@ Fichiers du dossier inculdes :
 de varible globales pour les scripts PHP
 - rooter.inc.php : rooter pour la redirection des pages, ...
 
+# Pourquoi Parapluie
 
+Le parapluie est un objet facile d'utilisation. C'est un objet qui peut etre emmener partout et quand la pluie arrive il se deploie rapidement. De plus c'est un objet tres personnalisable.
+
+Parapluie est une solution web relativement facile d'utilisation, se deploie tres vite sur un serveur et il suffit de faire un simple copier-coller du dossier racine pour le deplacer d'un endroit a une autre.
 
