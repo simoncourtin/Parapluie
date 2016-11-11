@@ -54,7 +54,7 @@ Fichiers du dossier inculdes :
 de varible globales pour les scripts PHP
 - rooter.inc.php : rooter pour la redirection des pages, ...
 
-## Pourquoi Parapluie
+## Pourquoi Parapluie ?
 
 Le parapluie est un objet facile d'utilisation. C'est un objet qui peut etre emmener partout et quand la pluie arrive il se deploie rapidement. De plus c'est un objet tres personnalisable.
 
