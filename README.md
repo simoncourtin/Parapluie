@@ -6,11 +6,11 @@ et leur contenu.
 Parapluie utilise les dossiers contenu dans le dossier Data/Pages pour creer les differentes pages du site. Les page porterons le nom des dossiers.
 Le contenu de chaque page est genere par les fichiers dans leur dossiers. Les extention .md, html et php sont gerer.
 
-## Installation
+## Installation &#127746;
 
 Veuillez télécharger le dossier de base et le copier a la racine de votre serveur ou l'emplacement de votre site web
 
-## Configuration
+## Configuration &#9730
 
 parametres.txt contient la configuration de base de votre site web
 
@@ -20,7 +20,7 @@ parametres.txt contient la configuration de base de votre site web
 
 >default_page:Nom du dossier de la page par defaut
 
-## Gestion du contenu
+## Gestion du contenu &#9748;
 
 ### Les pages
 
@@ -41,7 +41,7 @@ parametres.txt contient la configuration de base de votre site web
 
 Une interface utilisateur basique est installee de base et permet de modifier uniquement les fichier html
 
-## Pour les developpeurs
+## Pour les developpeurs &#128736;
 
 Parapluie supporte les scripts PHP dans les pages telque les formulaires de contact, ...
 
