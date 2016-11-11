@@ -10,7 +10,7 @@ Le contenu de chaque page est genere par les fichiers dans leur dossiers. Les ex
 
 Veuillez télécharger le dossier de base et le copier a la racine de votre serveur ou l'emplacement de votre site web
 
-## Configuration &#9730
+## Configuration &#9730;
 
 parametres.txt contient la configuration de base de votre site web
 
