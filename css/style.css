@@ -4,7 +4,7 @@ html {
 
 #corps
 {
-	width : 50%;
+	width : 70%;
 	margin : auto;
 	text-align:justify;
 }
@@ -21,15 +21,40 @@ footer
 	text-align : center;
 }
 
-header
+#titre-site
 {
-	width : 50%;
-	margin : auto;
-	text-align : center;
+	text-shadow: 0 0 7px rgba(0,0,0, 0.5);
+}
+
+h2{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 2.75em;
+}
+
+h4{
+	font-size: 2.5em;
+}
+
+.parallax-container
+{
+    height: 400px;
 }
 
 #menu > ul  > li
 {
 	display : inline;
 	margin : 10px;
+}
+
+#logo
+{
+	font-size: 4em;
+}
+
+#inner-banner
+{
+
 }

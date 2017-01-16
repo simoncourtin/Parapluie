@@ -11,9 +11,7 @@
 	  }
 	}
 ?>
-
-<div id="menu">
-  <ul>
-	<?php echo $menu;?>
-  </ul>    
-</div>
+<!--Html du menu-->
+<ul class="right hide-on-med-and-down">
+<?php echo $menu;?>
+</ul>

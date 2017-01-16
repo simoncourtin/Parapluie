@@ -1,0 +1,31 @@
+#corps
+{
+	width : 55%;
+	margin : auto;
+	text-align:justify;
+}
+
+.article img
+{
+	width : 500px;
+}
+
+footer
+{
+	width : 50%;
+	margin : auto;
+	text-align : center;
+}
+
+header
+{
+	width : 50%;
+	margin : auto;
+	text-align : center;
+}
+
+#menu > ul  > li
+{
+	display : inline;
+	margin : 10px;
+}

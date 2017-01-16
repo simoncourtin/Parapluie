@@ -1,0 +1,45 @@
+html {
+	font-family : sans-serif, arial;
+}
+
+#corps
+{
+	width : 50%;
+	margin : auto;
+	text-align:justify;
+}
+
+.article img
+{
+	width : 500px;
+}
+
+footer
+{
+	width : 50%;
+	margin : auto;
+	text-align : center;
+}
+
+
+#menu > ul  > li
+{
+	display : inline;
+	margin : 10px;
+}
+
+#slide-out , #mobile-demo  {
+	top: 64px;
+	overflow: hidden
+}
+
+#ui_tilte { 
+	font-size: 200%;
+	position : relative;
+	left : 50px;
+}
+#user_name { 
+	margin-right : 15px;
+	margin-left : 5px;
+	
+}

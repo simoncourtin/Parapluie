@@ -1,0 +1,12 @@
+
+<Files users.txt>
+order allow,deny
+deny from all
+</Files>
+
+<Files parametres.txt>
+order allow,deny
+deny from all
+</Files>
+
+

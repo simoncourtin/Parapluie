@@ -1,18 +1,18 @@
 <?php
-
-
+//chargement de l autoload
 require_once ("Includes/autoload.inc.php");
-
+//page manager
 $pageManager = new PageManager();
 ?>
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
-		<link href="css/style.css" rel="stylesheet">
-        
-
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/page.script.js"></script>
         <!--Rooter pour la construction dynamique des pages-->
         <?php
 			require_once("Includes/parameters.inc.php");
@@ -20,11 +20,13 @@ $pageManager = new PageManager();
         ?>
         <title><?php echo $page->getName()." - ".$PARAMETRES['titre_site'] ; ?></title>
     </head>
-    
-    <?php
-		require_once("Includes/header.inc.php");
-		require_once("Includes/body.inc.php");
-		require_once("Includes/footer.inc.php");
-    ?>
 
+    <?php
+    //header
+		require_once("Includes/header.inc.php");
+    //body
+    require_once("Includes/body.inc.php");
+    //footer
+    require_once("Includes/footer.inc.php");
+    ?>
 </html>
