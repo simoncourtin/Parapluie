@@ -26,18 +26,6 @@ footer
 	text-shadow: 0 0 7px rgba(0,0,0, 0.5);
 }
 
-h2{
-	font-size: 3em;
-}
-
-h3{
-	font-size: 2.75em;
-}
-
-h4{
-	font-size: 2.5em;
-}
-
 .parallax-container
 {
     height: 400px;
