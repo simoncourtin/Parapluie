@@ -11,6 +11,7 @@ $pageManager = new PageManager();
     <link rel="stylesheet" href="css/materialize.min.css">
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/page.script.js"></script>
         <!--Rooter pour la construction dynamique des pages-->
