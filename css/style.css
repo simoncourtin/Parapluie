@@ -2,11 +2,27 @@ html {
 	font-family : sans-serif, arial;
 }
 
+h2{	font-size: 3rem; font-weight: 300;}
+
+h3{	font-size: 2rem; font-weight: 300;}
+
 #corps
 {
 	width : 70%;
 	margin : auto;
 	text-align:justify;
+	font-weight: 300;
+}
+
+
+#corps ul
+{
+	margin-left: 50px;
+}
+
+#corps ul>li
+{
+	list-style:disc;
 }
 
 .article img
@@ -40,9 +56,4 @@ footer
 #logo
 {
 	font-size: 4em;
-}
-
-#inner-banner
-{
-
 }
