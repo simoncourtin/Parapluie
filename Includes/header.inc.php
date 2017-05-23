@@ -1,3 +1,9 @@
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/page.script.js"></script>
+<!--Fin import materialize-->
+
 <header>
 	<nav class="light-blue lighten-1" role="navigation">
 		<div class="nav-wrapper container"><a id="logo" href="#" class="brand-logo">&#9730;</a>
@@ -12,7 +18,7 @@
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div id="titre" class="container">
-        <h1 id="titre-site" class="header center teal-text text-darken-2"><?php echo $GLOBALS['parametres']['titre_site'] ; ?></h1>
+        <h1 id="titre-site" class="header center teal-text text-darken-2">&#9748; <?php echo $GLOBALS['parametres']['titre_site'] ; ?></h1>
         <div class="row center">
           <h5 class="header col s12 light">Une solution simple et rapide pour votre site web</h5>
         </div>
@@ -21,5 +27,5 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="Data/Ressources/umbrella.jpg" alt="Paralax1"></div>
+    <div class="parallax"><img src="Data/Ressources/umbrella.jpg" alt="parallax-image"></div>
   </div>

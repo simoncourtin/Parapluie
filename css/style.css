@@ -32,9 +32,14 @@ h3{	font-size: 2rem; font-weight: 300;}
 
 footer
 {
-	width : 50%;
 	margin : auto;
 	text-align : center;
+}
+
+.footer-copyright a
+{
+	color: rgba(255,255,255,1.0);
+	text-decoration: underline;
 }
 
 #titre-site
@@ -55,5 +60,5 @@ footer
 
 #logo
 {
-	font-size: 4em;
+	font-size: 3em;
 }

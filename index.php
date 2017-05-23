@@ -7,19 +7,18 @@ $pageManager = new PageManager();
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/page.script.js"></script>
-        <!--Rooter pour la construction dynamique des pages-->
-        <?php
-			require_once("Includes/parameters.inc.php");
+      <meta charset="UTF-8">
+      <?php
+      //includes du site
+      require_once("Includes/head.inc.php");
+      //chargement des parametres du site
+      require_once("Includes/parameters.inc.php");
+      //chargement du rooter pour redirection des pages
 			require_once("Includes/rooter.inc.php");
-        ?>
-        <title><?php echo $page->getName()." - ".$PARAMETRES['titre_site'] ; ?></title>
+      ?>
+
+      <!--titre du site (paramters.inc.php) -->
+      <title><?php echo $page->getName()." - ".$PARAMETRES['titre_site'] ; ?></title>
     </head>
 
     <?php

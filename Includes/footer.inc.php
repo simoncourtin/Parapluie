@@ -1,8 +1,6 @@
-<footer class="page-footer">
+<footer class="page-footer light-blue lighten-1">
+
   <div class="footer-copyright">
-    <div class="container">
-      <p>© 2016-<?php echo date("Y");?> Copyright</p>
-      <p>Fièrement propulsé par <a href="https://github.com/simoncourtin/Parapluie">Parapluie</a></p>
-    </div>
+      © 2016-<?php echo date("Y");?> Copyright. Fièrement propulsé par <a href="https://github.com/simoncourtin/Parapluie">Parapluie</a>
   </div>
 </footer>
