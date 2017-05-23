@@ -12,9 +12,12 @@
 
 footer
 {
+
 	width : 50%;
 	margin : auto;
+	margin-top: 50px;
 	text-align : center;
+	line-height: 50%;
 }
 
 header
@@ -28,4 +31,8 @@ header
 {
 	display : inline;
 	margin : 10px;
+}
+.image-container
+{
+	text-align: center;
 }
