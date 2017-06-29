@@ -1,10 +1,9 @@
 # Parapluie &#9730;
 
-Parapluie est un logiciel permet de creer un site internet qui utilise l'architecture de fichiers et de dossiers afin de creer les differentes pages
-et leur contenu.
+Parapluie est une solution web qui permet de creer un site internet rapidement et facilement. Parapluie utilise l'architecture de fichiers et de dossiers afin de creer les differentes pages et leur contenu.
 
-Parapluie utilise les dossiers contenu dans le dossier Data/Pages pour creer les differentes pages du site. Les page porterons le nom des dossiers.
-Le contenu de chaque page est genere par les fichiers dans leur dossiers. Les extention .md, html et php sont gerer.
+Parapluie utilise les dossiers contenu dans le dossier Data/Pages pour creer les differentes pages du site. Les pages porterons le nom des dossiers.
+Le contenu de chaque page est genere par les fichiers dans leur dossiers respectifs. Les extention .md, html et php sont gerer par default.
 
 ## Installation &#127746;
 
