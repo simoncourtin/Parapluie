@@ -1,0 +1,23 @@
+<?php
+  require_once("Includes/menu.inc.php");
+?>
+<!-- Always shows a header, even in smaller screens. -->
+
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><?php echo $GLOBALS['parametres']['titre_site'] ; ?></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <?php echo $menu;?>
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title"><?php echo $GLOBALS['parametres']['titre_site'] ; ?></span>
+  <nav class="mdl-navigation">
+  <?php echo $menu;?>
+  </nav>
+</div>

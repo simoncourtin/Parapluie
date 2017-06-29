@@ -62,3 +62,18 @@ footer
 {
 	font-size: 3em;
 }
+
+.promo-caption
+{
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.divider
+{
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}

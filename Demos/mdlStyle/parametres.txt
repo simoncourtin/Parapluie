@@ -1,0 +1,3 @@
+titre_site:Le Parapluie
+sous_titre_site:Le Parapluie
+default_page:1-Accueil
