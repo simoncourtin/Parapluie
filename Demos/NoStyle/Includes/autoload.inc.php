@@ -1,10 +1,10 @@
 <?php
-function __autoload($className)
+spl_autoload_register(function($className)
 {
 	if (!@include($className . '.php')) {
 		require $className.'.class.php';
 	}
-}
+});
 
 //Define the paths to the directories holding class files
 $paths = array(
