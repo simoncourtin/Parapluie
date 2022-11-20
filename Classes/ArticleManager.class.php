@@ -51,14 +51,13 @@ class ArticleManager{
     
     //afficher le contenu d'un article
     function AfficherContenu($article){
-	  $path = $article->getPath();
-	  $this->fileManager->AfficheFileContent($path);
+	    $path = $article->getPath();
+	    $this->fileManager->AfficheFileContent($path);
     }
 
     function ModiferArticle($article,$newContent){
         $path = $article->getPath();
         $this->fileManager->ModifierFileContent($path,$newContent);
     }
-
 
 }

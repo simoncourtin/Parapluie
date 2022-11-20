@@ -17,7 +17,7 @@ if(isset($page)){
 			OR pathinfo($a->getPath())['extension'] == "html"){
 				echo "<a class='waves-effect waves-light btn right' href='?action=modify&path=".$a->getPath()."'>Modifier <i class='material-icons'>edit</i></a>";
 			}
-			echo "<h3>".$a->getName()."</h3></li>";
+			echo "<h5>".$a->getName()."</h5></li>";
 			echo "<li class='collection-item'>";
 				$articleManager->AfficherContenu($a);
 			echo "</li>";

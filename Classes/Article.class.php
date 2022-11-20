@@ -71,5 +71,5 @@ class Article {
       $this->name = $name;
     }
 
-
 }
+

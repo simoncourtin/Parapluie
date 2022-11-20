@@ -12,6 +12,8 @@ h3{	font-size: 2rem; font-weight: 300;}
 	margin : auto;
 	text-align:justify;
 	font-weight: 300;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 
@@ -28,6 +30,13 @@ h3{	font-size: 2rem; font-weight: 300;}
 .article img
 {
 	width : 500px;
+}
+
+.article .cover-img
+{
+	width: 100%;
+	object-fit: cover;
+	text-align: center;
 }
 
 footer

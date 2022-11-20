@@ -4,15 +4,11 @@ html {
 
 #corps
 {
-	width : 50%;
+	width : 90%;
 	margin : auto;
 	text-align:justify;
 }
 
-.article img
-{
-	width : 500px;
-}
 
 footer
 {
@@ -20,7 +16,6 @@ footer
 	margin : auto;
 	text-align : center;
 }
-
 
 #menu > ul  > li
 {
