@@ -43,14 +43,14 @@ class PageManager{
             $pathContenu = $path == '.' ? $c : $path . '/' . $c;
             if(is_file($pathContenu)) {
                //c'est un fichier
-			   $extention =  pathinfo($pathContenu)['extension'];
-			  if ($extention == "jpg" || $extention == "jpeg" || $extention == "png"){
-				  //c'est une image 
-				  array_push($images, $pathContenu);
-			  } else {
-				$article = $this->articleManager->getArticle($pathContenu);
-				array_push($articles, $article);  
-			  }
+                $extention =  pathinfo($pathContenu)['extension'];
+                if ($extention == "jpg" || $extention == "jpeg" || $extention == "png"){
+                  //c'est une image 
+                  array_push($images, $pathContenu);
+                } else {
+                $article = $this->articleManager->getArticle($pathContenu);
+                array_push($articles, $article);  
+                }
               
 
             } else if($c != "." && $c != ".." && is_dir($pathContenu)) {

@@ -67,6 +67,16 @@ footer
 	margin : 10px;
 }
 
+.ul-sub-menu
+{
+	display: none;
+}
+
+.is-active
+{
+	display: block;
+}
+
 #logo
 {
 	font-size: 3em;
