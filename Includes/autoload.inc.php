@@ -1,4 +1,15 @@
 <?php
+/*
+//autoloader for PHP version < 7.0
+function __autoload($className)
+{
+	if (!@include($className . '.php')) {
+		require $className.'.class.php';
+	}
+}
+*/
+
+//autoloader for PHP version >= 7.0
 spl_autoload_register(function($className)
 {
 	if (!@include($className . '.php')) {

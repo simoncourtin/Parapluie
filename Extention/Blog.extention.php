@@ -80,7 +80,7 @@ class PostManager extends ArticleManager{
         $this->post_path = $post_path;
     }
 
-    function readPost($element, $path){  
+    function readPost($element, $path){ 
         $post_manager = new PostManager();
         $post = $post_manager->getPost($path);
         $post_manager->AfficherContenu($post);
@@ -96,11 +96,11 @@ class PostManager extends ArticleManager{
         $dir = $this->post_path;
         if ($handle = opendir($dir))
         {
-            
+          
             //Le dossier existe
             while ($element = readdir($handle))
             {
-                
+              
                 $path = $dir == '.' ? $element : $dir . '/' . $element;
 
                 if ( $element != "." && $element != ".." && is_file($path) == false)
@@ -114,11 +114,11 @@ class PostManager extends ArticleManager{
                     //c'est un fichier
                     $file_name_explode = explode("-", $element);
                     $date = strtotime ( $file_name_explode[0]); 
-                    $today = date ('d M Y');
-                    $article_date = date ( 'd M Y' , $date );
-                    
-                    if($article_date >= $today)
+                    $today = date ('Ymd');
+                    $article_date = date ( 'Ymd' , $date );
+                    if($article_date <= $today){
                         $this->readPost($element, $path);
+                    }
                 }
             }
             closedir($handle);

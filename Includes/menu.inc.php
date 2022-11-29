@@ -24,7 +24,6 @@ function get_pages_menu($pages, $i, $classes = array( "ul" => array("ul-menu"), 
 <!--Html du menu-->
 
 <?php 
-	
 	$menuclasses = array(
 		"ul" => array("right hide-on-med-and-down", "dropdown-content"),
 		"li" => array("li-itemp")
