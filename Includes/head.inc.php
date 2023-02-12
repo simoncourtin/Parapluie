@@ -9,7 +9,7 @@
 
 <!--Includes des ressources css gloales-->
 <link rel="stylesheet" href="css/materialize.min.css">
-<link href="css/style.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
 
 <!-- Bootstrap Font Icon CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
